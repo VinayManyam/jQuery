@@ -1,0 +1,32 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript"> 
+    
+   $(document).ready(function() {  
+     $('div').hover( 
+         function () { 
+           $(this).css({"background-color":"red"}); 
+         },  
+         function () { 
+           $(this).css({"background-color":"blue"}); 
+         } 
+     );  
+   }); 
+      </script> 
+   <style> 
+      .div{ margin:10px;padding:12px; 
+             border:2px solid #666; 
+             width:60px; 
+           } 
+  </style> 
+</head> 
+<body> 
+   <p>Move mouse on any square below to see the result:</p> 
+   <div class="div" style="background-color:blue;"></div> 
+   <div class="div" style="background-color:blue;"></div> 
+   <div class="div" style="background-color:blue;"></div> 
+</body> 
+</html>

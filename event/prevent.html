@@ -1,0 +1,21 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript"> 
+    
+   $(document).ready(function() {  
+         $("a").click(function(event){ 
+         event.preventDefault(); 
+         alert( "Default behavior is disabled!" ); 
+      });  
+   }); 
+   </script> 
+</head> 
+<body> 
+   <span>Click the following link and it won't work:</span> 
+   <a href="http://www.google.com">GOOGLE Inc.</a> 
+</body> 
+</html>
+   }

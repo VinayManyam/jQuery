@@ -1,0 +1,36 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript"> 
+    
+   $(document).ready(function() {  
+      $("div").click(function(event){ 
+          alert("1 - This is : " + $(this).text()); 
+          // Comment the following to see the effect. 
+          event.stopImmediatePropagation(); 
+      });  
+      // This won't be executed. 
+      $("div").click(function(event){ 
+          alert("2 - This is : " + $(this).text()); 
+      });  
+   }); 
+   </script> 
+   <style> 
+      div{ margin:10px;padding:12px; 
+             border:2px solid #666; 
+             width:160px; 
+           } 
+  </style> 
+</head> 
+<body> 
+   <p>Click on any box to see the result:</p> 
+      <div id="div1" style="background-color:blue;"> 
+       BOX 1 
+  </div> 
+  <div id="div2" style="background-color:red;"> 
+         BOX 2 
+  </div>  
+</body> 
+</html>
