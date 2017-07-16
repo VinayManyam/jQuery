@@ -1,0 +1,42 @@
+<html> 
+   <head> 
+      <title>The jQuery Example</title> 
+      <script type="text/javascript" src="../jquery.js"></script> 
+   
+      <script type="text/javascript" language="javascript"> 
+    
+         $(document).ready(function() {  
+            $("#in").click(function(){ 
+               $(".target").fadeIn( 'slow', function(){  
+                  $(".log").text('Fade In Transition Complete'); 
+               }); 
+            });  
+            $("#out").click(function(){ 
+               $(".target").fadeOut( 'slow', function(){  
+                  $(".log").text('Fade Out Transition Complete'); 
+               }); 
+            }); 
+         }); 
+      </script> 
+   
+      <style> 
+         p {background-color:#bca; width:200px; border:1px solid green;} 
+      </style> 
+   
+   </head> 
+  
+   <body> 
+        <p>Click on any of the buttons</p> 
+   
+      <button id="out"> Fade Out </button> 
+      <button id="in"> Fade In</button>  
+   
+      <div class="target"> 
+         <img src="6.jpg" alt="jQuery" /> 
+      </div> 
+   
+      <div class="log"></div> 
+   
+   </body> 
+  
+</html>

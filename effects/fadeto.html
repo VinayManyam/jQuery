@@ -1,0 +1,43 @@
+<html> 
+   <head> 
+      <title>The jQuery Example</title> 
+      <script type="text/javascript" src="../jquery.js"></script> 
+   
+      <script type="text/javascript" language="javascript"> 
+    
+         $(document).ready(function() {  
+            $("#more").click(function(){ 
+               $(".target").fadeTo( 'slow', 0.7, function(){  
+                  $(".log").text('More Opacity Transition Complete'); 
+               }); 
+            });  
+            $("#less").click(function(){ 
+               $(".target").fadeTo( 'slow', 0.2, function(){  
+                  $(".log").text('less Opacity Transition Complete'); 
+               }); 
+            }); 
+         }); 
+    
+      </script> 
+   
+      <style> 
+         p {background-color:#bca; width:200px; border:1px solid green;} 
+      </style> 
+   
+   </head> 
+  
+   <body> 
+           <p>Click on any of the buttons</p> 
+   
+      <button id="less"> Less Opacity </button> 
+      <button id="more"> More Opacity</button>  
+   
+      <div class="target"> 
+         <img src="6.jpg" alt="jQuery" /> 
+      </div> 
+   
+      <div class="log"></div> 
+   
+   </body> 
+  
+</html>

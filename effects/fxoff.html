@@ -1,0 +1,43 @@
+<html> 
+   <head> 
+      <title>The jQuery Example</title> 
+      <script type="text/javascript" src="../jquery.js"></script> 
+    <script type="text/javascript" language="javascript"> 
+         $(document).ready(function() {  
+            $("#enable").click(function(){ 
+               jQuery.fx.off = false; 
+            });  
+            $("#disable").click(function(){ 
+               jQuery.fx.off = true; 
+            });  
+            $("#go").click(function(){ 
+               $(".target").animate({left: '+=200px'}, 2000); 
+            });  
+            $("#back").click(function(){ 
+               $(".target").animate({left: '-=200px'}, 200); 
+            }); 
+         }); 
+      </script> 
+   
+      <style> 
+         p {background-color:#bca; width:350px; border:1px solid green;}    
+         div{position: absolute; left: 50px; top:300px;} 
+      </style> 
+   
+   </head> 
+   
+   <body>  
+      <p>Click enable or disable and then go or back button:</p> 
+   
+      <button id="enable"> Enable</button> 
+      <button id="disable"> Disable </button> 
+      <button id="go"> GO</button> 
+      <button id="back"> BACK </button> 
+      
+        <div class="target"> 
+         <img src="6.jpg" alt="jQuery" /> 
+      </div> 
+   
+   </body> 
+  
+</html> 

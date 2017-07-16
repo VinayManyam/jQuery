@@ -1,0 +1,47 @@
+<html> 
+   <head> 
+      <title>The jQuery Example</title> 
+      <script type="text/javascript" src="../jquery.js"></script> 
+   
+      <script type="text/javascript" language="javascript"> 
+    
+         $(document).ready(function() {  
+            $("#out").click(function(){ 
+               $("#block").animate({  
+                  width: "70%", 
+                  opacity: 0.4, 
+                  marginLeft: "0.6in", 
+                  fontSize: "3em",  
+                  borderWidth: "10px" 
+               }, 1500 ); 
+            }); 
+     
+            $("#in").click(function(){ 
+               $("#block").animate({  
+                  width: "100", 
+                  opacity: 1.0, 
+                  marginLeft: "0in", 
+                  fontSize: "100%",  
+                  borderWidth: "1px" 
+               }, 1500 ); 
+            }); 
+         }); 
+      </script> 
+   
+      <style> 
+         div {background-color:#bca; width:100px; border:1px solid green;} 
+           </style> 
+   
+   </head> 
+  
+   <body>  
+      <p>Click on any of the buttons</p> 
+  
+      <button id="out"> Animate Out </button> 
+      <button id="in"> Animate In</button> 
+   
+      <div id="block">Hello</div> 
+   
+   </body> 
+  
+</html>

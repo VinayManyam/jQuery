@@ -1,0 +1,39 @@
+<html> 
+   <head> 
+      <title>The jQuery Example</title> 
+      <script type="text/javascript" src="../jquery.js"></script> 
+   
+      <script type="text/javascript" language="javascript"> 
+    
+         $(document).ready(function() {  
+            $("#go").click(function(){ 
+               $(".target").animate({left: '+=100px'}, 2000); 
+            });  
+            $("#stop").click(function(){ 
+               $(".target").stop(); 
+            });  
+            $("#back").click(function(){ 
+               $(".target").animate({left: '-=100px'}, 2000); 
+            }); 
+         }); 
+      </script> 
+   <style> 
+         p {background-color:#bca; width:250px; border:1px solid green;}    
+         div{position: absolute; left: 50px; top:300px;} 
+      </style> 
+   
+   </head> 
+  
+   <body>  
+      <p>Click on any of the following buttons:</p> 
+   
+      <button id="go"> GO</button> 
+      <button id="stop"> STOP </button> 
+      <button id="back"> BACK </button>  
+      <div class="target"> 
+         <img src="6.jpg" alt="jQuery" /> 
+      </div> 
+   
+   </body> 
+  
+</html>
