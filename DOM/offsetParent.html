@@ -1,0 +1,23 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript">  
+     $(document).ready(function(){ 
+          $("p").offsetParent().addClass('hilight'); 
+     });  
+  </script> 
+  <style> 
+      .hilight { background:yellow; } 
+  </style>  
+</head> 
+<body> 
+     <span>Top Element</span> 
+     <div style="position:relative;"> 
+        <div>sibling<div>child</div></div> 
+        <p>sibling</p> 
+        <span>sibling</span> 
+    </div> 
+</body> 
+</html> 

@@ -1,0 +1,39 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript"> 
+    
+   $(document).ready(function() { 
+       
+      $("li").click(function () { 
+         if ($(this).is(":first-child")) { 
+            $("p").text("This is list item 1"); 
+         } else if ($(this).is(".middle0,.middle1")) { 
+            $("p").text("This is middle class list"); 
+         } else if ($(this).is(":contains('item 5')")) { 
+            $("p").text("It's 5th list"); 
+         }  
+      }); 
+   });  
+   </script> 
+   <style> 
+      .selected { color:red; } 
+  </style> 
+</head> 
+<body> 
+   <div> 
+   <span>Click any list item below:</span> 
+   <ul> 
+     <li class="top0">list item 1</li> 
+     <li class="top1">list item 2</li> 
+          <li class="middle0">list item 3</li> 
+     <li class="middle1">list item 4</li> 
+     <li class="bottom0">list item 5</li> 
+     <li class="bottom1">list item 6</li> 
+   </ul> 
+   <p>FILLER</p> 
+   </div> 
+</body> 
+</html>

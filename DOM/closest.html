@@ -1,0 +1,32 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+ <script> 
+  $(document).ready(function(){  
+    $(document).bind("click", function (e) { 
+      $(e.target).closest("li").toggleClass("highlight"); 
+    });  
+  }); 
+  </script> 
+  <style> 
+  .highlight { color:red;  
+          background: yellow; 
+        } 
+  </style> 
+</head> 
+<body> 
+   <div> 
+   <p>Click any item below to see the result:</p> 
+   <ul> 
+     <li class="top">list item 1</li> 
+     <li class="top">list item 2</li> 
+     <li class="middle">list item 3</li> 
+     <li class="middle">list item 4</li> 
+     <li class="bottom">list item 5</li> 
+     <li class="bottom">list item 6</li> 
+        </ul> 
+   </div> 
+</body> 
+</html>

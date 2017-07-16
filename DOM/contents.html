@@ -1,0 +1,18 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+<script> 
+      $(document).ready(function(){ 
+    var $content = $("iframe").contents(); 
+    $content.find("body").append("I'm in an iframe!"); 
+  }); 
+  </script> 
+   
+</head> 
+<body> 
+  <iframe src="data.php" width="300" height="100"> 
+  </iframe> 
+</body> 
+</html>

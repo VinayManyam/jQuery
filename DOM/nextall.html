@@ -1,0 +1,21 @@
+<html> 
+<head> 
+<title>the title</title> 
+   <script type="text/javascript"  
+   src="jquery.js"></script> 
+   <script type="text/javascript" language="javascript">  
+     $(document).ready(function(){ 
+       $("div:first").nextAll().addClass("hilight"); 
+            });  
+  </script> 
+  <style> 
+      .hilight { background:yellow; } 
+  </style>  
+</head> 
+<body> 
+   <div>first</div> 
+   <div>sibling<div>child</div></div> 
+   <div>sibling</div> 
+   <div>sibling</div> 
+</body> 
+</html>
